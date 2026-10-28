@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpansalek-parallexpert_jd184"
+version = "0.1.0"
+description = "按段落统计预训练并行策略专家·提示注入的跨轮传播相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "dpansalek" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://dpansalek.github.io"
+Repository = "https://github.com/dpansalek/parallexpert_jd184"
+Issues = "https://github.com/dpansalek/parallexpert_jd184/issues"
+
+[project.scripts]
+parallexpert_jd184 = "parallexpert_jd184:main"
+
+[tool.setuptools]
+py-modules = ["parallexpert_jd184"]
